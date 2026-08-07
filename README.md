@@ -27,11 +27,13 @@ Corrected class-ID groupings (see [GTSRB below](#gtsrb--german-traffic-sign-reco
 - **Mandatory** = classes `33,34,35,36,37,38,39,40` — circular, blue background
 - **Danger** = classes `11,18,19,20,21,22,23,24,25,26,27,28,29,30,31` — triangular, white background, red border
 
-### Downloads
+<!--- ### Downloads
 
 - [Full training/test dataset with annotations](https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html)
 - C++ and MATLAB code snippets for reading ground truth, running/evaluating a detector, and formatting submissions (coming soon!)
 - Baseline results: a Viola–Jones (Haar) detector, a Hough-like circle/triangle voting detector, and a HOG+LDA sliding-window detector (coming soon!)
+
+-->
 
 ### Citation
 
@@ -107,7 +109,7 @@ A single CSV file, semicolon-separated, no header, no filename quoting. One row 
 ...
 ```
 
-### Pre-calculated features
+<!--- ### Pre-calculated features
 
 To lower the barrier for participants without an image-processing background, three pre-computed feature sets are provided (same directory layout as the image set; see each archive's `Feature_description.txt` for parameters):
 
@@ -115,23 +117,29 @@ To lower the barrier for participants without an image-processing background, th
 - **Haar-like features** — 5 feature types at multiple sizes (12 variants total), 11,584-dimensional feature vector.
 - **Hue histograms** — a 256-bin HSV hue histogram per image.
 
-### Code snippets
+-->
 
-<!--- - **MATLAB** — iterate over training/test sets, read images and annotations, with hooks for your own training/classification code. -->
-- **C++** — trains a linear (LDA) classifier on the pre-calculated features using the [Shark](http://shark-project.sourceforge.net/) machine learning library; used to generate the baseline results.
+<!--- ### Code snippets
+
+- **MATLAB** — iterate over training/test sets, read images and annotations, with hooks for your own training/classification code. 
+- **C++** — trains a linear (LDA) classifier on the pre-calculated features using the [Shark](http://shark-project.sourceforge.net/) machine learning library; used to generate the baseline results. 
 - **Python** — reads the training set and class IDs (depends on matplotlib).
+
+-->
 
 <!---- ### Result analysis application
 
 A GPLv2-licensed desktop tool (Qt 4.7 / CMake) for comparing approaches, inspecting confusion matrices, and browsing misclassified images. Source code is available in the downloads below; it has mainly been tested on Windows/Visual Studio. --->
 
-### Downloads
+<!--- ### Downloads
 
 - **Dataset (images, features, ground truth):** [External hosting mirror](https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html)
 - **MATLAB code:** `GTSRB_Matlab_code.zip` (coming soon!)
 - **C++ code:** `GTSRB_CPP_code.zip` (coming soon!)
 - **Python code:** `GTSRB_Python_code.zip` (coming soon!)
 - **Result analysis app (source):** `tsr-analysis-src.zip` (coming soon!)
+
+-->
 
 ### Citation
 
@@ -183,11 +191,12 @@ Both datasets were made possible with help from Lukas Caup, Sebastian Houben, Lu
 
 ## People / Contact
 
-For questions or comments: **tsr-benchmark@ini.rub.de**
+<!--- For questions or comments: **tsr-benchmark@ini.rub.de**
 
 - **Johannes Stallkamp** — PhD student, Institut für Neuroinformatik, Real-Time Computer Vision group; research on computer vision for advanced driver assistance systems.
-- **Marc Schlipsing** — PhD student, Real-Time Computer Vision group, Institut für Neuroinformatik.
-- **Jan Salmen** — PhD student and (since 2009) group leader, Real-Time Computer Vision, Institut für Neuroinformatik.
+- **Marc Schlipsing** — PhD student, Real-Time Computer Vision group, Institut für Neuroinformatik. -->
+- **Sebastian Houben** - Maintaining the benchmark distribution, Professor at Bonn-Rhein-Sieg University of Applied Sciences, sebastian.houben@h-brs.de
+- **Jan Salmen** — PhD student and (since 2009) group leader, Real-Time Computer Vision, Institut für Neuroinformatik, now Professor at TH Köln – University of Applied Sciences
 - **Christian Igel** — Professor with special duties in Machine Learning, Department of Computer Science (DIKU), University of Copenhagen; formerly Juniorprofessor for Optimization of Adaptive Systems at INI.
 
 ---
