@@ -2,8 +2,9 @@
 
 This site presents two benchmark data sets for computer vision and machine learning research, compiled by the Real-Time Computer Vision group at the Institut für Neuroinformatik (INI), Ruhr-Universität Bochum:
 
-- **[GTSRB — German Traffic Sign Recognition Benchmark](#gtsrb--german-traffic-sign-recognition-benchmark)**, a large multi-category classification benchmark used in a competition at IJCNN 2011.
 - **[GTSDB — German Traffic Sign Detection Benchmark](#gtsdb--german-traffic-sign-detection-benchmark)**, a single-image detection benchmark presented at IJCNN 2013.
+- **[GTSRB — German Traffic Sign Recognition Benchmark](#gtsrb--german-traffic-sign-recognition-benchmark)**, a large multi-category classification benchmark used in a competition at IJCNN 2011.
+
 
 > **Status notice:** Online submission/leaderboard functionality was retired in 2019 due to maintenance overhead. The datasets, software packages, and previously submitted results remain available for download and reference.
 
