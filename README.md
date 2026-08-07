@@ -2,8 +2,8 @@
 
 This site presents two benchmark data sets for computer vision and machine learning research, compiled by the Real-Time Computer Vision group at the Institut für Neuroinformatik (INI), Ruhr-Universität Bochum:
 
-- **[GTSDB — German Traffic Sign Detection Benchmark](#gtsdb--german-traffic-sign-detection-benchmark)**, a single-image detection benchmark presented at IJCNN 2013.
-- **[GTSRB — German Traffic Sign Recognition Benchmark](#gtsrb--german-traffic-sign-recognition-benchmark)**, a large multi-category classification benchmark used in a competition at IJCNN 2011.
+- **[GTSDB — German Traffic Sign Detection Benchmark](#gtsdb--german-traffic-sign-detection-benchmark)**, a single-image detection benchmark presented at IJCNN 2013 ([download page](https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html).
+- **[GTSRB — German Traffic Sign Recognition Benchmark](#gtsrb--german-traffic-sign-recognition-benchmark)**, a large multi-category classification benchmark used in a competition at IJCNN 2011 ([download page](https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html)).
 
 
 > **Status notice:** Online submission/leaderboard functionality was retired in 2019 due to maintenance overhead. The datasets, software packages, and previously submitted results remain available for download and reference.
@@ -12,17 +12,16 @@ This site presents two benchmark data sets for computer vision and machine learn
 
 ## GTSDB — German Traffic Sign Detection Benchmark
 
-The successor to GTSRB: a single-image **detection** problem (localizing signs in full-color images), presented at IJCNN 2013.
+A single-image **detection** problem (localizing signs in full-color images), presented at the International Joint Conference on Neural Networks 2013.
 
 **Highlights**
 - Single-image detection problem
 - 900 images total: 600 training / 300 evaluation
 - Signs grouped into three categories chosen to suit detectors with different characteristics
-- Was accompanied by an online evaluation and ranking system (now retired)
 
 ### Sign categories
 
-Corrected class-ID groupings (see the 2013-01-07 erratum below):
+Corrected class-ID groupings (see [GTSRB below](#gtsrb--german-traffic-sign-recognition-benchmark)):
 
 - **Prohibitory** = classes `0,1,2,3,4,5,7,8,9,10,15,16` — circular, white background, red border
 - **Mandatory** = classes `33,34,35,36,37,38,39,40` — circular, blue background
@@ -30,11 +29,9 @@ Corrected class-ID groupings (see the 2013-01-07 erratum below):
 
 ### Downloads
 
-- Full training/test dataset with annotations (originally `TrainIJCNN2013.zip` and companion test archive)
-- C++ and MATLAB code snippets for reading ground truth, running/evaluating a detector, and formatting submissions
-- Baseline results: a Viola–Jones (Haar) detector, a Hough-like circle/triangle voting detector, and a HOG+LDA sliding-window detector
-
-*(Re-host these archives and update the links above as needed.)*
+- [Full training/test dataset with annotations](https://sid.erda.dk/public/archives/ff17dc924eba88d5d01a807357d6614c/published-archive.html)
+- C++ and MATLAB code snippets for reading ground truth, running/evaluating a detector, and formatting submissions (coming soon!)
+- Baseline results: a Viola–Jones (Haar) detector, a Hough-like circle/triangle voting detector, and a HOG+LDA sliding-window detector (coming soon!)
 
 ### Citation
 
@@ -64,7 +61,7 @@ Perfect results were achieved in individual categories by:
 A single-image, multi-class classification problem.
 
 **Highlights**
-- More than 40 classes
+- 40 traffic sign classes
 - More than 50,000 images in total
 - Large, lifelike database with reliable ground truth (semi-automatic annotation)
 - Each physical traffic sign instance is unique within the dataset (occurs only once in the real world)
@@ -79,7 +76,7 @@ The training set is organized as:
 ### Image format
 - One traffic sign per image
 - A 10% border (at least 5 pixels) is included around the traffic sign
-- Images are stored as PPM (Portable Pixmap, P6)
+- Images are stored as PPM ([Portable Pixmap, P6](http://en.wikipedia.org/wiki/Netpbm_format))
 - Sizes vary from 15×15 to 250×250 pixels; images are not necessarily square, and the sign is not necessarily centered
 - The sign's bounding box is included in the annotations
 
@@ -120,23 +117,21 @@ To lower the barrier for participants without an image-processing background, th
 
 ### Code snippets
 
-- **MATLAB** — iterate over training/test sets, read images and annotations, with hooks for your own training/classification code.
+<!--- - **MATLAB** — iterate over training/test sets, read images and annotations, with hooks for your own training/classification code. -->
 - **C++** — trains a linear (LDA) classifier on the pre-calculated features using the [Shark](http://shark-project.sourceforge.net/) machine learning library; used to generate the baseline results.
 - **Python** — reads the training set and class IDs (depends on matplotlib).
 
-### Result analysis application
+<!---- ### Result analysis application
 
-A GPLv2-licensed desktop tool (Qt 4.7 / CMake) for comparing approaches, inspecting confusion matrices, and browsing misclassified images. Source code is available in the downloads below; it has mainly been tested on Windows/Visual Studio.
+A GPLv2-licensed desktop tool (Qt 4.7 / CMake) for comparing approaches, inspecting confusion matrices, and browsing misclassified images. Source code is available in the downloads below; it has mainly been tested on Windows/Visual Studio. --->
 
 ### Downloads
 
 - **Dataset (images, features, ground truth):** [External hosting mirror](https://sid.erda.dk/public/archives/daaeac0d7ce1152aea9b61d9f1e19370/published-archive.html)
-- **MATLAB code:** `GTSRB_Matlab_code.zip`
-- **C++ code:** `GTSRB_CPP_code.zip`
-- **Python code:** `GTSRB_Python_code.zip`
-- **Result analysis app (source):** `tsr-analysis-src.zip`
-
-*(Original download links pointed to `benchmark.ini.rub.de/Dataset/...`; update these to wherever you re-host the files.)*
+- **MATLAB code:** `GTSRB_Matlab_code.zip` (coming soon!)
+- **C++ code:** `GTSRB_CPP_code.zip` (coming soon!)
+- **Python code:** `GTSRB_Python_code.zip` (coming soon!)
+- **Result analysis app (source):** `tsr-analysis-src.zip` (coming soon!)
 
 ### Citation
 
