@@ -63,7 +63,7 @@ Perfect results were achieved in individual categories by:
 A single-image, multi-class classification problem.
 
 **Highlights**
-- 40 traffic sign classes
+- 43 traffic sign classes
 - More than 50,000 images in total
 - Large, lifelike database with reliable ground truth (semi-automatic annotation)
 - Each physical traffic sign instance is unique within the dataset (occurs only once in the real world)
